@@ -3,8 +3,7 @@ var fs = require('fs');
 var index = fs.readFileSync('index.html');
 
 http.createServer(function (req, res) {
-  var requestUrl = url.parse(req.url)
-  res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.writeHead(200, {'Content-Type': 'text/plain'});
   res.end(index);
 }).listen(process.env.PORT || 5000);
 console.log('Server currently listening...');
