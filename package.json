@@ -16,7 +16,7 @@
   "homepage": "https://startbootstrap.com/template-overviews/agency",
   "bugs": {
     "url": "https://github.com/BlackrockDigital/startbootstrap-agency/issues",
-    "email": "feedback@startbootstrap.com"
+    "email": "zaffransamuelpro@gmail.com"
   },
   "license": "MIT",
   "author": "Start Bootstrap",
@@ -42,8 +42,5 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "3.0.0"
-  },
-  "bugs": {
-    "url": "https://github.com/homepage/issues"
   }
 }
