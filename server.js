@@ -4,7 +4,7 @@ fs.readFileSync('index.html', function (err, html){
 
   if(err) throw err;
   http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'utf-8'});
+    res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(html);
     res.end();
   }).listen(process.env.PORT || 5000);
