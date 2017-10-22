@@ -1,9 +1,12 @@
 var http = require('http');
 var fs = require('fs');
-var index = fs.readFileSync('index.html');
+fs.readFileSync('index.html', function (err, html){
 
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end(index);
-}).listen(process.env.PORT || 5000);
-console.log('Server currently listening...');
+  if(err) throw err;
+  http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.write(html);
+    res.end();
+  }).listen(process.env.PORT || 5000);
+  console.log('Server currently listening...');
+};
